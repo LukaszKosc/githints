@@ -21,6 +21,7 @@ git push -u origin master
 
 
 1. how to add .gitignore and rules to .gitignore if you forgot to do this and you already pushed/committed some code?
+(https://stackoverflow.com/questions/11451535/gitignore-is-not-working)
 
 git add .
 git commit -m "Initial commit" 
@@ -37,5 +38,13 @@ echo .gitignore >> .gitignore
 
 git add .
 git commit -m "fixed untracked files"
+
+When you remove something from .gitignore file the above steps will not work for you. You can try this:
+git add -f "filetype"
+git commit -m “Refresh removing filetype from .gitignore file.”
+
+Without adding another commit to your project, one line will be enough to make .gitignore work as it is supposed to:
+
+git rm -r --cached debug.log nbproject
 
 2. ...
