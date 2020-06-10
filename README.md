@@ -50,7 +50,7 @@ git rm -r --cached debug.log nbproject
 2. rebase changes from your branch on some other branch
 
 git checkout branch_name
-git log | grep ... (find latest COMMIT_ID which is not in branch_name commits list) 
+git log | grep ... (find latest COMMIT_ID which is not in branch_name commits list)
 git reset --soft COMMIT_ID
 git stash
 git pull --rebase origin branch_you_want_to_rebase_on
