@@ -48,6 +48,7 @@ Without adding another commit to your project, one line will be enough to make .
 git rm -r --cached debug.log nbproject
 
 2. rebase changes from your branch on some other branch
+
 git checkout branch_name
 git log | grep ... (find latest COMMIT_ID which is not in branch_name commits list) 
 git reset --soft COMMIT_ID
