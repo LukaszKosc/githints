@@ -58,3 +58,4 @@ git stash pop
 git add . # (all changed files)
 git commit -m "msg"
 git push --force origin branch_name
+
