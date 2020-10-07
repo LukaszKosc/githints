@@ -32,12 +32,12 @@ echo .git >> .gitignore\
 echo .gitignore >> .gitignore\
 ...
 git add .\
-git commit -m "fixed untracked files"\
+git commit -m "fixed untracked files"
 
 When you remove something from .gitignore file the above steps will not work for you. You can try this:
 
 git add -f "filetype"\
-git commit -m “Refresh removing filetype from .gitignore file.”\
+git commit -m “Refresh removing filetype from .gitignore file.”
 
 Without adding another commit to your project, one line will be enough to make .gitignore work as it is supposed to:
 
@@ -65,7 +65,7 @@ git add path_to_file(s) / git add .\
 git stash\
 git pull --rebase origin master\
 (resolve potential conflicts)\
-git stash pop\
+git stash pop
 
 4. move your local branch to latest commit from remote
 
