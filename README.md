@@ -83,17 +83,17 @@ or just single file:
 git checkout -- path_to_file
 
 7. when you git add your file and already commit it and want to revert to previous (last from remote) commit:
-git checkout local_branch_name
-do some changes...
-git add . 
-git commit -m "Commit to be removed..."
-oh, I want to revert to previous commit:
-git log
-- commitID1 - Message: Commit to be removed...
-- commitID2 - Message: (this is the commit you want to get your local code to)
-git reset --soft commitID2
-your code is in repo, last local commit vanished
+git checkout local_branch_name\
+do some changes...\
+git add . \
+git commit -m "Commit to be removed..."\
+oh, I want to revert to previous commit:\
+git log\
+- commitID1 - Message: Commit to be removed...\
+- commitID2 - Message: (this is the commit you want to get your local code to)\
+git reset --soft commitID2\
+your code is in repo, last local commit vanished\
 
-git reset --soft 
+git reset --soft \
 
 
