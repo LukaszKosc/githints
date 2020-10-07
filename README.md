@@ -90,10 +90,9 @@ git commit -m "Commit to be removed..."\
 oh, I want to revert to previous commit:\
 git log
 - commitID1 - Message: Commit to be removed...
-- commitID2 - Message: (this is the commit you want to get your local code to)
-git reset --soft commitID2
-your code is in repo, last local commit vanished
-
-git reset --soft
+- commitID2 - Message: (this is the commit you want to get your local code to)\
+git reset --soft commitID2\
+your code is in repo, last local commit vanished\
+git reset --soft\
 
 
