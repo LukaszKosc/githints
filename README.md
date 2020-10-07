@@ -84,7 +84,8 @@ git checkout -- .\
 or just single file:\
 git checkout -- path_to_file
 
-7. when you git add your file and already commit it and want to revert to previous (last from remote) commit:\
+6. when you git add your file and already commit it and want to revert to previous (last from remote) commit:
+
 git checkout local_branch_name\
 do some changes...\
 git add . \
