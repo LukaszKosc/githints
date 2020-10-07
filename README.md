@@ -22,7 +22,7 @@ git push -u origin master
 (https://stackoverflow.com/questions/11451535/gitignore-is-not-working)
 
 git add .\
-git commit -m "Initial commit"\
+git commit -m "Initial commit"
 
 you forgot to add some reg-exps to .gitignore\
 Run the following commands from the top folder of your git repo:
