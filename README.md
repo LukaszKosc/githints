@@ -67,22 +67,22 @@ git checkout branch_name
 - git add path_to_file(s) / git add .
   git stash
 
-git pull --rebase origin master
-(resolve potential conflicts)
-git stash pop
+git pull --rebase origin master\
+(resolve potential conflicts)\
+git stash pop\
 
-4. move your local branch to latest commit from remote
-git checkout local_branch_name
-git reset --hard origin/remote_branch_name
+4. move your local branch to latest commit from remote\
+git checkout local_branch_name\
+git reset --hard origin/remote_branch_name\
 
-5. discard all changes in your working directory
-git checkout local_branch_name
-do some change -> decide to abandon it all
-git checkout -- . 
-or just single file:
-git checkout -- path_to_file
+5. discard all changes in your working directory\
+git checkout local_branch_name\
+do some change -> decide to abandon it all\
+git checkout -- .\
+or just single file:\
+git checkout -- path_to_file\
 
-7. when you git add your file and already commit it and want to revert to previous (last from remote) commit:
+7. when you git add your file and already commit it and want to revert to previous (last from remote) commit:\
 git checkout local_branch_name\
 do some changes...\
 git add . \
