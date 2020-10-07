@@ -49,38 +49,40 @@ git rm -r --cached debug.log nbproject
 
 2. rebase changes from your branch on some other branch
 
-git checkout branch_name
-git log | grep ... (find latest COMMIT_ID which is not in branch_name commits list)
-git reset --soft COMMIT_ID
-git stash
-git pull --rebase origin branch_you_want_to_rebase_on
-git stash pop
-git add . # (all changed files)
-git commit -m "msg"
+git checkout branch_name\
+git log | grep ... (find latest COMMIT_ID which is not in branch_name commits list)\
+git reset --soft COMMIT_ID\
+git stash\
+git pull --rebase origin branch_you_want_to_rebase_on\
+git stash pop\
+git add . # (all changed files)\
+git commit -m "msg"\
 git push --force origin branch_name
 
 3. rebase branch to latest code from master branch
-git checkout branch_name
-git pull master
-git checkout branch_name 
-(to save work-in-progress code)
-- git add path_to_file(s) / git add .
-  git stash
 
+git checkout branch_name\
+git pull master\
+git checkout branch_name \
+(to save work-in-progress code)\
+git add path_to_file(s) / git add .\
+git stash\
 git pull --rebase origin master\
 (resolve potential conflicts)\
 git stash pop\
 
-4. move your local branch to latest commit from remote\
-git checkout local_branch_name\
-git reset --hard origin/remote_branch_name\
+4. move your local branch to latest commit from remote
 
-5. discard all changes in your working directory\
+git checkout local_branch_name\
+git reset --hard origin/remote_branch_name
+
+5. discard all changes in your working directory
+
 git checkout local_branch_name\
 do some change -> decide to abandon it all\
 git checkout -- .\
 or just single file:\
-git checkout -- path_to_file\
+git checkout -- path_to_file
 
 7. when you git add your file and already commit it and want to revert to previous (last from remote) commit:\
 git checkout local_branch_name\
@@ -93,6 +95,4 @@ git log
 - commitID2 - Message: (this is the commit you want to get your local code to)\
 git reset --soft commitID2\
 your code is in repo, last local commit vanished\
-git reset --soft\
-
-
+git reset --soft
